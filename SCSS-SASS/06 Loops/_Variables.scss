@@ -1,0 +1,26 @@
+
+// Colors Map
+$colors: (
+    "primary": #2257e7,
+    "secondary": #11b711,
+    "error": #ff0000,
+    "Info": #ffff00,
+    "Purple": #8400ff,
+    "Brown": #453527,
+    "white": #ffffff,
+    "Black": #000000,
+    "Orange": #ff9100,
+    "Gray": #9f9d9c,
+);
+
+@debug map-get ($colors, "Purple") ; // #8400ff
+@debug map-has-key ($colors, "Brown"); // True
+@debug map-has-key ($colors, "Red" ) ; // false
+@debug map-remove ($colors, "primary"); // "Original": #1f54e4  Removed
+@debug map-merge ($colors, ("pink" :#ffcecb)); // added new color to map
+
+
+.test-btn{
+    background-color: map-get($colors, "Purple");
+}
+

@@ -1,0 +1,60 @@
+/*3 Methodes of importing Sass File*/
+@import url(Varibles.scss);
+@import './Varibles';
+@use  './Varibles';
+
+/*Exemple of usining @use*/
+@use '../abstracts/fonts' as *;
+@use '../abstracts/colors' as c;
+.card {
+font-size: $font-size;
+color: c.$blue;
+}
+
+
+
+
+/* Creat a function*/
+@mixin  FlexCenter1() {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin  FlexCenter2($Direction) {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $Direction;
+}
+
+header {
+
+@include FlexCenter1();
+@include FlexCenter2(row);
+@include FlexCenter2(Column);
+
+
+background: lightblue;
+display: flex;
+justify-content: center;
+color: $textColor;
+  button {
+  background: $primaryBtn;
+   &:hover {
+   background-color: $hvrclr;
+   transition: All .9s ease-in-out;
+   }
+  }
+}
+
+.contact {
+  /* Extends inherit the values to another*/
+  /* You can overwrite the value inside the inherited*/
+@extend header;
+background: rgb(255, 89, 0);
+}

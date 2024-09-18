@@ -1,0 +1,24 @@
+
+@import 'variables';
+
+
+h1{
+    color: $Success; 
+    margin-bottom: $base-margin;
+    &:hover{
+        color: $Alert;
+        transition: 0.5s;
+    }
+}
+
+a{
+    color: $Alert;
+    padding: $base-padding; 
+}
+
+button{
+background: $Original;
+color: rgb(0, 0, 0); 
+border-radius: $base-border-radius;  
+border-width: $base-border-thickness; 
+}

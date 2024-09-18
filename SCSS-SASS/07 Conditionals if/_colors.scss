@@ -1,0 +1,54 @@
+
+
+@each $key, $val in $colors {
+    .text-#{$key} {
+    color: $val
+    }
+    .bg-#{$key}{
+        background-color : $val;
+    }
+
+    @if($val != black and $val != White){
+    // light variation
+    @for $i from 1 through 9 {
+        .text-#{$key}-light-#{$i}{
+            color: mix(white, $val, $i * 10);
+        }
+        .bg-#{$key}-light-#{$i}{
+            background-color: mix(white, $val, $i * 10);
+        }
+    }
+
+    // dark variation
+    @for $i from 1 through 9 {
+        .text-#{$key}-dark-#{$i}{
+            color: mix(Black, $val, $i * 10);
+        }
+        .bg-#{$key}-dark-#{$i}{
+            background-color: mix(Black, $val, $i * 10);
+        }
+    }
+}
+}
+
+
+
+    
+
+
+/// test if 
+
+@if(10 > 5){
+    .test-if {
+        background-color: #000000;
+      }
+}@else{
+    .test-if {
+        background-color: #ffffff;
+      }
+}
+
+
+
+    
+    

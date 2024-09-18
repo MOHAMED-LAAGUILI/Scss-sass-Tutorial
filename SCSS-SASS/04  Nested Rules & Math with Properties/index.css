@@ -1,0 +1,21 @@
+.card {
+  display: block;
+  padding: 0.75rem;
+  border: 1px solid rgb(11, 11, 11);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.card .card-title {
+  font-size: 1rem;
+  padding-bottom: 0.75rem;
+  font-weight: bold;
+}
+.card .card-body {
+  font-size: 1rem;
+}
+.card .card-body a {
+  text-decoration: none;
+}
+.card .card-body a:link {
+  color: rgba(255, 98, 0, 0.951);
+}/*# sourceMappingURL=index.css.map */

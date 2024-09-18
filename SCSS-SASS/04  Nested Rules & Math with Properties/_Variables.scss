@@ -1,0 +1,23 @@
+// colors
+$Original: #1f54e4;
+$Success: #008000;
+$Alert: #ff0000;
+$Info: #ffff00;
+
+//spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+//box-shadow
+$base-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+// font sizes
+$base-font-size: 1rem;
+$font-size-sm : $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2.5;
+$font-size-xxl: $base-font-size * 3;

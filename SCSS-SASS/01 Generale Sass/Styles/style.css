@@ -1,0 +1,39 @@
+/*Two Methodes of importing Sass File*/
+@import url(Varibles.scss);
+/* Creat a function*/
+header, .contact {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: Column;
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  color: rgb(58, 42, 42);
+}
+header button, .contact button {
+  background: rgb(182, 85, 153);
+}
+header button:hover, .contact button:hover {
+  background-color: rgb(255, 230, 0);
+  transition: All 0.9s ease-in-out;
+}
+
+.contact {
+  /* Extends inherit the values to another*/
+  /* You can overwrite the value inside the inherited*/
+  background: rgb(255, 89, 0);
+}/*# sourceMappingURL=style.css.map */
